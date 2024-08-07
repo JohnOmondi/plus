@@ -7,7 +7,7 @@ import androidx.navigation.compose.rememberNavController
 
 
 @Composable
-fun AboutScreen(navComposable: NavController){
+fun AboutScreen(navController: NavController){
 
 
 
