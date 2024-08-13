@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573625341552",
+    "project_id": "property-plus-29152",
+    "storage_bucket": "property-plus-29152.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573625341552:android:c3a60798a5737b61dcc6b5",
+        "android_client_info": {
+          "package_name": "com.example.propertyplus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWsSQolqJ6UZ7LHnqBDmS50r1gwVieaHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
