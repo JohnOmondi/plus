@@ -8,4 +8,5 @@ const val ROUT_PROPERTY="property"
 const val ROUT_INTENT="intent"
 const val ROUT_SIGNUP="signup"
 const val ROUT_LOGIN="login"
+const val ROUT_DASHBOARD="dashboard"
 
