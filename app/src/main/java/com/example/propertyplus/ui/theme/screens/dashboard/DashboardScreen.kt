@@ -41,10 +41,13 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.propertyplus.R
+import com.example.propertyplus.navigation.ADD_PRODUCTS_URL
 import com.example.propertyplus.navigation.ROUT_DETAIL
 import com.example.propertyplus.navigation.ROUT_HOME
 import com.example.propertyplus.navigation.ROUT_INTENT
+import com.example.propertyplus.navigation.ROUT_LOGIN
 import com.example.propertyplus.navigation.ROUT_PROPERTY
+import com.example.propertyplus.navigation.VIEW_PRODUCTS_URL
 import com.example.propertyplus.ui.theme.lightblue
 
 
@@ -53,6 +56,7 @@ fun DashboardScreen(navController: NavController){
     Column (
         modifier = Modifier
             .fillMaxSize()
+
             .background(Color.White),
         horizontalAlignment = Alignment.CenterHorizontally)
 
@@ -193,7 +197,7 @@ fun DashboardScreen(navController: NavController){
                             }
                             Spacer(modifier = Modifier.height(10.dp))
                             Text(
-                                text = "home",
+                                text = "settings",
                                 fontSize = 20.sp,
                                 fontFamily = FontFamily.Cursive,
                                 color = Color.Black,
@@ -257,11 +261,11 @@ fun DashboardScreen(navController: NavController){
                                 contentAlignment = Alignment.Center
                             ) {
                                 Image(
-                                    painter = painterResource(id = R.drawable.login),
-                                    contentDescription = "home",
+                                    painter = painterResource(id = R.drawable.icon45),
+                                    contentDescription = "add product",
                                     modifier = Modifier
                                         .size(100.dp)
-                                        .clickable { navController.navigate(ROUT_DETAIL) }
+                                        .clickable { navController.navigate(ADD_PRODUCTS_URL) }
 
                                 )
                             }
@@ -290,11 +294,11 @@ fun DashboardScreen(navController: NavController){
 
                             Box(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
                                 Image(
-                                    painter = painterResource(id = R.drawable.login),
-                                    contentDescription = "home",
+                                    painter = painterResource(id = R.drawable.signup),
+                                    contentDescription = "view product",
                                     modifier = Modifier
                                         .size(100.dp)
-                                        .clickable { navController.navigate(ROUT_DETAIL) }
+                                        .clickable { navController.navigate(VIEW_PRODUCTS_URL) }
 
                                 )
                             }
